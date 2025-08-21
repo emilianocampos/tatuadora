@@ -59,7 +59,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
                 </ul>
 
                 <ul class="social-icon ml-lg-3">
-                   
+
                     <li><a href="https://www.instagram.com/anibaltattooart/" class="fa fa-instagram"></a></li>
                 </ul>
             </div>
@@ -168,19 +168,64 @@ https://www.tooplate.com/view/2119-gymso-fitness
                         <img src="images/a.jpeg" class="img-fluid" alt="Artist">
 
                         <div class="team-info d-flex flex-column">
-
-                            <h3>Anibal  Lizondo</h3>
+                            <h3>Anibal Lizondo</h3>
                             <span>Tattoo Artist</span>
 
+                            <!-- Biografía resumida -->
+                            <p class="mt-3 text-dark">
+                                Aníbal Lizondo es un destacado tatuador argentino con más de 24 años de experiencia en
+                                el arte del tatuaje. Con una carrera que abarca más de dos décadas, Aníbal ha viajado
+                                por
+                                el mundo, perfeccionando su técnica y estilo. Ha participado en convenciones de tatuajes
+                                internacionales en Argentina, Brasil, Europa y Estados Unidos...
+                            </p>
+
+                            <!-- Biografía oculta -->
+                            <div id="moreBio" class="text-dark"
+                                style="display: none; overflow: hidden; transition: max-height 0.5s ease;">
+                                <p>
+                                    donde ha obtenido numerosos premios por su trabajo.
+                                </p>
+                                <p>
+                                    Actualmente residente en la hermosa ciudad de Arkansas, Aníbal sigue creando arte en
+                                    la
+                                    piel de personas de todo el mundo. Su pasión por el tatuaje se refleja en cada una
+                                    de sus
+                                    obras, que combinan técnica, creatividad y un profundo respeto por la cultura y la
+                                    historia
+                                    del tatuaje.
+                                </p>
+                                <p>
+                                    Aníbal es un hombre de familia, casado con una profesora de artes visuales y padre
+                                    de
+                                    dos adolescentes que comparten su amor por el arte y la creatividad. En su tiempo
+                                    libre,
+                                    Aníbal disfruta viajar, explorar nuevos lugares y experimentar diferentes culturas.
+                                </p>
+                                <p>
+                                    Con su estilo único y su dedicación al arte del tatuaje, Aníbal Lizondo es un
+                                    artista
+                                    respetado y admirado en la comunidad del tatuaje internacional.
+                                </p>
+                            </div>
+
+                            <!-- Botón Leer más -->
+                            <button id="toggleBioBtn" class="btn btn-link p-0 text-primary"
+                                style="text-decoration: none;">
+                                ... Leer más
+                            </button>
+
+                            <!-- Redes sociales -->
                             <ul class="social-icon mt-3">
-                           
-                                <li><a href="https://www.instagram.com/anibaltattooart/" class="fa fa-instagram"></a></li>
+                                <li>
+                                    <a href="https://www.instagram.com/anibaltattooart/" class="fa fa-instagram"></a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-              
+
             </div>
         </div>
     </section>
@@ -198,7 +243,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
 
                 <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
                     <div class="class-thumb">
-                        <img src="images/a (1).jpeg" class="img-fluid" alt="Class" style="height: 440px;">
+                        <img src="images/a (1).jpeg" class="img-fluid" alt="Class" >
 
 
                     </div>
@@ -297,22 +342,73 @@ https://www.tooplate.com/view/2119-gymso-fitness
         <div class="container">
             <div class="row">
 
-                <div class="ml-auto col-lg-5 col-md-6 col-12">
-                    <h2 class="mb-4 pb-2 text-white" data-aos="fade-up" data-aos-delay="200">Feel free to ask anything
-                    </h2>
+                <form action="https://formsubmit.co/Hannibaltattoo@hotmail.com" method="post"
+                    class="contact-form webform" data-aos="fade-up" data-aos-delay="400" role="form">
 
-                    <form action="https://formsubmit.co/Hannibaltattoo@hotmail.com" method="post" class="contact-form webform" data-aos="fade-up" data-aos-delay="400"
-                        role="form">
-                        <input type="text" class="form-control" name="cf-name" placeholder="Name">
+                    <!-- Name -->
+                    <label class="text-white">Name *</label>
+                    <input type="text" class="form-control mb-3" name="First Name" placeholder="First" required>
+                    <input type="text" class="form-control mb-3" name="Last Name" placeholder="Last" required>
 
-                        <input type="email" class="form-control" name="cf-email" placeholder="Email">
+                    <!-- Phone -->
+                    <label class="text-white">Phone *</label>
+                    <input type="tel" class="form-control mb-3" name="Phone" placeholder="Phone" required>
 
-                        <textarea class="form-control" rows="5" name="cf-message" placeholder="Message"></textarea>
+                    <!-- Email -->
+                    <label class="text-white">Email *</label>
+                    <input type="email" class="form-control mb-3" name="Email" placeholder="Email" required>
 
-                        <button type="submit" class="form-control" id="submit-button" name="submit">Send
-                            Message</button>
-                    </form>
-                </div>
+                    <!-- Interested -->
+                    <label class="text-white">I'm interested in…</label>
+                    <select class="form-control mb-3" name="Service">
+                        <option value="Tattoo">Tattoo</option>
+                        <option value="Piercing">Piercing</option>
+                        <option value="Consultation">Consultation</option>
+                    </select>
+
+                    <!-- Size -->
+                    <label class="text-white">Approximate size in inches (example 3”x5”)</label>
+                    <input type="text" class="form-control mb-3" name="Size" placeholder='e.g. 3"x5"'>
+
+                    <!-- Placement -->
+                    <label class="text-white">Placement on Body</label>
+                    <input type="text" class="form-control mb-3" name="Placement">
+
+                    <!-- Description -->
+                    <label class="text-white">Description of Tattoo</label>
+                    <textarea class="form-control mb-3" rows="3" name="Description"></textarea>
+
+                    <!-- Ink -->
+                    <label class="text-white d-block mb-2">Ink (Select all that apply)</label>
+                    <div class="mb-3">
+
+                        <label class="text-white d-flex align-items-center mb-2 gap-2">
+                            <input type="checkbox" name="Ink[]" value="Black" class="me-2">
+                            Black
+                        </label>
+
+                        <label class="text-white d-flex align-items-center mb-2 gap-2">
+                            <input type="checkbox" name="Ink[]" value="Single Color" class="me-2">
+                            Single Color
+                        </label>
+
+                        <label class="text-white d-flex align-items-center gap-2">
+                            <input type="checkbox" name="Ink[]" value="Multi-Color" class="me-2">
+                            Multi-Color
+                        </label>
+
+                    </div>
+
+                    <!-- Availability -->
+                    <label class="text-white">What dates and times are you available?</label>
+                    <textarea class="form-control mb-3" rows="3" name="Availability"></textarea>
+
+                    <!-- Submit -->
+                    <button type="submit" class="form-control btn btn-primary" id="submit-button" name="submit">
+                        Send Request
+                    </button>
+
+                </form>
 
                 <div class="mx-auto mt-4 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12">
                     <h2 class="mb-4 text-white" data-aos="fade-up" data-aos-delay="600">Where you can <span>find
@@ -385,7 +481,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
                 </div>
 
                 <div class="modal-body">
-                    <form   class="membership-form webform" role="form">
+                    <form class="membership-form webform" role="form">
                         <input type="text" class="form-control" name="cf-name" placeholder="John Doe">
 
                         <input type="email" class="form-control" name="cf-email" placeholder="Johndoe@gmail.com">
@@ -414,7 +510,20 @@ https://www.tooplate.com/view/2119-gymso-fitness
         </div>
 
     </div>
+<script>
+  const toggleBtn = document.getElementById("toggleBioBtn");
+  const moreBio = document.getElementById("moreBio");
 
+  toggleBtn.addEventListener("click", () => {
+    if (moreBio.style.display === "none") {
+      moreBio.style.display = "block";
+      toggleBtn.textContent = "Leer menos";
+    } else {
+      moreBio.style.display = "none";
+      toggleBtn.textContent = "... Leer más";
+    }
+  });
+</script>
     <!-- SCRIPTS -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
